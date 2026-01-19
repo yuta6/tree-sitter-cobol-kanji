@@ -1,0 +1,81 @@
+====================================
+Japanese variable names (Kanji)
+====================================
+
+       identification division.
+       program-id. 日本語テスト.
+       data division.
+       working-storage section.
+       01  顧客名 pic x(20).
+       01  金額 pic 9(10).
+       01  マイ固－計算基準年月 pic 9(006).
+       procedure division.
+       stop run.
+
+---
+
+(start
+  (program_definition
+    (identification_division
+      (program_name))
+    (data_division
+      (working_storage_section
+        (data_description
+          (level_number)
+          (entry_name)
+          (picture_clause
+            (picture_x)))
+        (data_description
+          (level_number)
+          (entry_name)
+          (picture_clause
+            (picture_9)))
+        (data_description
+          (level_number)
+          (entry_name)
+          (picture_clause
+            (picture_9)))))
+    (procedure_division
+      (stop_statement)
+      (period))))
+
+====================================
+Mixed Japanese and ASCII variable names
+====================================
+
+       identification division.
+       program-id. test.
+       data division.
+       working-storage section.
+       01  パラメ－払方 pic 9(002).
+       01  TEST-VAR pic x(10).
+       01  マイ固－Ｍ２３０００終了 pic x(001).
+       procedure division.
+       stop run.
+
+---
+
+(start
+  (program_definition
+    (identification_division
+      (program_name))
+    (data_division
+      (working_storage_section
+        (data_description
+          (level_number)
+          (entry_name)
+          (picture_clause
+            (picture_9)))
+        (data_description
+          (level_number)
+          (entry_name)
+          (picture_clause
+            (picture_x)))
+        (data_description
+          (level_number)
+          (entry_name)
+          (picture_clause
+            (picture_x)))))
+    (procedure_division
+      (stop_statement)
+      (period))))
