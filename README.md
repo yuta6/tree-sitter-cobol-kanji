@@ -1,9 +1,14 @@
-# tree-sitter-cobol
+# tree-sitter-cobol-kanji
 
-COBOL85 grammar of [tree-sitter](https://github.com/tree-sitter/tree-sitter)
+COBOL85 grammar of [tree-sitter](https://github.com/tree-sitter/tree-sitter) with support for Japanese variable names.
 
-The syntax rules of tree-sitter-cobol are based on [opensource-cobol](https://github.com/yutaro-sakamoto/opensource-cobol)
+The syntax rules of tree-sitter-cobol-kanji are based on [opensource-cobol](https://github.com/yutaro-sakamoto/opensource-cobol)
 and are tested with [NIST COBOL85 test suite](https://www.itl.nist.gov/div897/ctg/cobol_form.htm)
+
+## Features
+
+- Full COBOL85 syntax support
+- **Japanese variable names support** (Kanji, Hiragana, Katakana, Full-width characters)
 
 ## How to run with latest Nodejs Version(v20.10.0)
 
