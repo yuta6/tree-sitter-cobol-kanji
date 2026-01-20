@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tree-sitter-cobol-kanji"
+version = "0.1.0"
+description = "COBOL grammar for tree-sitter with Japanese variable name support"
+authors = [
+    {name = "Yutaro Sakamoto", email = "yutaro-sakamoto@yutaro-sakamoto.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+keywords = ["tree-sitter", "COBOL", "parsing", "Japanese", "Kanji"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Compilers",
+    "Topic :: Text Processing :: Linguistic",
+]
+requires-python = ">=3.9"
+dependencies = [
+    "tree-sitter>=0.20.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/yuta6/tree-sitter-cobol-kanji"
+Repository = "https://github.com/yuta6/tree-sitter-cobol-kanji"
+Issues = "https://github.com/yuta6/tree-sitter-cobol-kanji/issues"
+
+[tool.setuptools]
+packages = ["tree_sitter_cobol_kanji"]
+package-dir = {"" = "bindings/python"}
+
+[tool.setuptools.package-data]
+tree_sitter_cobol_kanji = ["*.so", "*.pyd", "py.typed"]
