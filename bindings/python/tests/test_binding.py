@@ -13,7 +13,8 @@ class TestBinding(unittest.TestCase):
 
     def test_can_parse_simple_cobol(self):
         """Test that we can parse a simple COBOL program."""
-        parser = Parser(language())
+        parser = Parser()
+        parser.language = language()
 
         source_code = b"""       identification division.
        program-id. test.
@@ -28,7 +29,8 @@ class TestBinding(unittest.TestCase):
 
     def test_can_parse_japanese_variables(self):
         """Test that we can parse Japanese variable names."""
-        parser = Parser(language())
+        parser = Parser()
+        parser.language = language()
 
         source_code = b"""       identification division.
        program-id. test.
